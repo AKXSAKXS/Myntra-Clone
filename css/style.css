@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Assistant", sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header {
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  position: fixed;
+}
+main {
+  width: 100%;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  width: 90%;
+  min-width: 900px;
+  max-width: 1700px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-bg {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  background: url(https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png);
+  background-size: 1404px 105px;
+  width: 53px;
+  height: 36px;
+  background-position: -462px 0;
+}
+nav {
+  width: 35%;
+  margin-left: 2%;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 5;
+  text-transform: uppercase;
+  position: relative;
+}
+nav ul li{
+  padding: 0px 20px;
+}
+nav ul li:last-child {
+    flex-shrink: 0;
+}
+nav ul a {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: #282c3f;
+  font-weight: 700;
+}
+nav ul li sup {
+  color: #ff3f6c;
+  font-weight: 600;
+  font-size: 10px;
+}
+.overlay {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  background: white;
+  width: 200%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+  border: 1px solid grey;
+}
+.overlay .bglist{
+  background-color:   rgba(245, 245, 246, .4);
+}
+li:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.overlay-display {
+  display: flex;
+ 
+}
+.overlay-display div{
+  width: 250px;
+  padding: 20px 0px;
+}
+.overlay-display ul {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  align-items: start;
+}
+.overlay-display ul a {
+  display: inline-block;
+  text-wrap: unset;
+}
+.overlay-display ul a {
+  font-size: 14px;
+  color: #282c3f;
+  padding: 5px;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+.overlay-display ul .link-color {
+  color: #ee5f73;
+  font-weight: 700;
+}
+.search-container {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f5f5f6;
+  border-radius: 5px;
+  margin-left: auto;
+}
+.search-container span {
+  padding: 8px;
+  font-size: 14px;
+  color: #696e79;
+}
+
+.search-container input {
+  width: 100%;
+  font-size: 14px;
+  height: 40px;
+  line-height: 24px;
+  color: #696e79;
+  padding: 8px 10px 10px;
+  margin: 0;
+  outline: 0;
+  border: 1px solid #f5f5f6;
+  border-radius: 0 4px 4px 0;
+  border-left: 0;
+  background: #f5f5f6;
+}
+header .user-container {
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+}
+header .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+}
+header .profile span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+}
+/* hero */
+section,
+footer {
+  width: 90%;
+  min-width: 900px;
+  max-width: 1700px;
+  margin: auto;
+  padding: 10px 0px 20px;
+}
+.hero-section {
+  height: 600px;
+}
+.hero-section .banner {
+  display: flex;
+  height: 100%;
+  padding-top: 100px;
+}
+.hero-section .boy {
+  width: 50%;
+  height: 100%;
+}
+.hero-section .girl {
+  width: 50%;
+  height: 100%;
+}
+.sale {
+  height: 500px;
+  margin: 20px auto;
+}
+.flat {
+  display: flex;
+}
+.flat img {
+  width: 50%;
+}
+.fresh-icons {
+  width: 300px;
+  height: 400px;
+}
+.home-card{
+  overflow: hidden;
+}
+.card-image{
+  transition: 0.7s;
+  
+}
+.card-image:hover {
+  transform: scale(1.05);
+}
+.fresh-icons-display {
+  display: flex;
+  justify-content: space-between;
+}
+.category {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.category .card {
+  width: 251px;
+  height: 300px;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-list h3 {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 25px 0px;
+}
+.footer-list li {
+  color: #696b79;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+.footer-list .download-image img {
+  width: 130px;
+}
+.footer-list .social-icons {
+  font-size: 32px;
+}
+.footer-trademark {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0px 10px;
+}
+footer {
+  width: 70%;
+  margin-bottom: 20px;
+}
+.footer-wrapper {
+  width: 100%;
+  background: #fafbfc;
+}
+footer .trademark {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+footer .mark-img {
+  width: 50px;
+}
+.footer-list h3:nth-child(2) {
+  padding-bottom: 5px;
+}
+/* home page */
+.hero-home {
+  padding-top: 80px;
+}
+.middle-home {
+  display: flex;
+}
+.middle-home .middle-left {
+  width: 75%;
+}
+.middle-home .middle-right {
+  width: 25%;
+ padding-left: 40px;
+ letter-spacing: 2px;
+}
+.middle-left h2 {
+  text-transform: uppercase;
+  color: #3e4152;
+  letter-spacing: 0.15em;
+  font-size: 1.8em;
+  margin: 50px 0 50px 30px;
+  max-height: 5em;
+  font-weight: 700;
+}
+.middle-left .card-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-section .home-card {
+  width: 50%;
+}
+.card-section .home-card:nth-child(2n-1) {
+  padding-right: 4px;
+}
+.middle-right li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #3e4152;
+  font-weight: 400;
+  display: inline-block;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 30px;
+}
+.middle-right .link-heading  {
+  padding: 30px 0 30px 30px
+}
+.middle-right .link-heading .firstOne {
+  padding: 0 0 30px 30px;
+}
+.wrapper-trend {
+  width: 100%;
+  background-color: rgb(239, 237, 237);
+}
+.trend-section {
+  background-color: rgb(239, 237, 237);
+}
+.trend-img-cards {
+  display: flex;
+}
+.trend-img-cards img {
+  width: 33%;
+}
+
+.feature-section {
+  display: flex;
+  margin-bottom: 100px;
+}
+.feature-section div {
+  padding-right: 8px;
+}
